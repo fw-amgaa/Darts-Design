@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="/swiper.min.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <script defer src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="c-header u-flex_between" style="box-shadow: none;">
+            <!-- PC Header -->
+            <div class="c-header__left u-flex_between">
+                <img src="/img/dats.png" alt="Company Logo">
+                <ul class="c-header__left--menu u-flex_between">
+                    <li class="u-hover_main"><a>Нүүр</a></li>
+                    <li class="u-hover_main a-slow"><a>Бүтээгдэхүүн</a></li>
+                    <li class="u-hover_main"><a>Блог</a></li>
+                    <li class="u-hover_main"><a>Тоглогчид</a></li>
+                </ul>
+            </div>
+
+            <div class="c-header__mobile">
+
+                <!-- Mobile Header -->
+                <div class="c-header__mobile--wrapper u__flex-container">
+                    <div id="mobile-toggle" class="c-header__mobile--wrapper--tabs">
+                        <i class="lnr lnr-menu"></i>
+                    </div>
+                </div>
+    
+    
+                <!-- Mobile click navigation -->
+                <div class="c-header__mobile--nav">
+                    <div id="mobile-nav" class="c-header__mobile--nav--tab">
+    
+                        <!-- Nav Logo -->
+                        <div class="c-header__mobile--nav--tab--top">
+                            <i id="mobile-remove" class="lnr lnr-cross"></i>
+                        </div>
+    
+                        <!-- Nav list -->
+                        <div class="c-header__mobile--nav--tab--list">
+                            <ul>
+                                <li><a href="/">Нүүр</a></li>
+                                <li><a href="/products">Бүтээгдэхүүн</a></li>
+                                <li><a href="/products">Блог</a></li>
+                                <li><a href="/products">Тамирчид</a></li>
+                            </ul>
+                        </div>
+                        <div class="c-footer__content--quarter">
+                            <h3>Холбоотой байх</h3>
+                            <form action="">
+                                <input type="text" placeholder="Email оруулна уу">
+                                <a><img src="/img/do-arrow2.png" alt=""></a>
+                            </form>
+                            <h3>Биднийг дагах</h3>
+                            <div class="u-flex_between">
+                                <a class="u-hover_icon">
+                                    <img src="/img/fb-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
+                                </a>
+                                <a class="u-hover_icon">
+                                    <img src="/img/twitter-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
+                                </a>
+                                <a class="u-hover_icon">
+                                    <img src="/img/instagram-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
+                                </a>
+                                <a class="u-hover_icon">
+                                    <img src="/img/youtube-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="c-header__right u-flex_between">
+                <form action="" class="u-search u-flex_between">
+                    <img src="/img/search-white.png" alt="Search Icon">
+                    <input type="text" placeholder="Хайх зүйлээ оруулна уу...">
+                </form>
+                <img src="/img/shopping-bag-6.png" alt="">
+                <img src="/img/account1.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(./img/4.jpg)">
+                <div class="u-container slider-info">
+                    <h2>Шинэ бараа ирлээ</h2>
+                    <h1>Хоёрыг авбал нэг үнэгүй онцгой урамшуулал</h1>
+                    <span>Энэ сарыг дуустал</span>
+                    <button class="u-button">Очиж үзэх</button>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(./img/photo-1582172958571-208b55ba4bab.jpg)">
+                <div class="u-container slider-info">
+                    <h2>Шlor sit amet consect</h2>
+                    <h1>Lorem ipsum dololium tempore!</h1>
+                    <span>Эlor sit amet consectл</span>
+                    <button class="u-button">Очиж үзэх</button>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(./img/photo-1563941811030-aecd7b37eb66.jpg)">
+                <div class="u-container slider-info">
+                    <h2>Шинэ бараа ирлээ</h2>
+                    <h1>Хоёрыг авбал нэг үнэгүй онцгой урамшуулал</h1>
+                    <span>Энэ сарыг дуустал</span>
+                    <button class="u-button">Очиж үзэх</button>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
+    <!-- Items Content -->
+    <div class="c-content">
+        <div class="u-container">
+            <h2>Онцлох           
+                <span class="u-semititle">Бүтээгдэхүүн</span>
+            </h2>
+            <h3>Танд санал болгох манай бүтээгдэхүүн</h3>
+            <div class="c-content__items">
+                <div class="c-content__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <span id="p-price">150,000$</span>
+                                <span id="p-price_old">230,000$</span>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-content__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <span id="p-price">150,000$</span>
+                                <span id="p-price_old">230,000$</span>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-content__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <span id="p-price">150,000$</span>
+                                <span id="p-price_old">230,000$</span>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-content__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <span id="p-price">150,000$</span>
+                                <span id="p-price_old">230,000$</span>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-content__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <span id="p-price">150,000$</span>
+                                <span id="p-price_old">230,000$</span>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-content__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <span id="p-price">150,000$</span>
+                                <span id="p-price_old">230,000$</span>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-content__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <span id="p-price">150,000$</span>
+                                <span id="p-price_old">230,000$</span>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-content__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <span id="p-price">150,000$</span>
+                                <span id="p-price_old">230,000$</span>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="u-button">Бүх бүтээгдэхүүн харах</button>
+        </div>
+    </div>
+
+    <!-- Wrapper -->
+    <div class="c-rapper">
+            <div class="c-rapper__info">
+                <h2>Ирж буй тэмцээн</h2>
+                <h3>Ирэх сарын 15-наас 17-ны хооронд тэмцээн болно.</h3>
+                <button class="u-button">Дэлгэрэнгүй</button>
+            </div>
+    </div>
+
+    <!-- Player Content -->
+    <div class="c-content">
+        <div class="u-container">
+            <h2>
+                Онцлох
+                <span class="u-semititle">Тамирчин</span>
+            </h2>
+            <div class="c-content__items">
+                <div class="c-content__items--item">
+                    <div class="u-pcard a-silver">
+                        <img src="/img/New folder/scream1.png" alt="">
+                    </div>
+                </div>
+                <div class="c-content__items--item">
+                    <div class="u-pcard a-bronze">
+                        <img src="/img/New folder/scream1.png" alt="">
+                    </div>
+                </div>
+                <div class="c-content__items--item">
+                    <div class="u-pcard a-gold">
+                        <img src="/img/New folder/scream1.png" alt="">
+                    </div>
+                </div>
+                <div class="c-content__items--item">
+                    <div class="u-pcard a-gold">
+                        <img src="/img/New folder/scream1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="u-button">Бүх тоглогчид харах</button>
+        </div>
+    </div>
+    
+    <!-- Blog Content -->
+    <div class="c-content">
+        <div>
+            <h2 class="mb-2">
+                Онцлох
+                <span class="u-semititle">
+                    Нийтлэл
+                </span>
+            </h2>
+            <div class="c-content__blogs">
+                <img class="a-imgshadow a-left" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
+                <div class="c-content__blogs--img a-left">
+                    <img class="scale-image a-left" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
+                </div>
+                <div class="c-content__blogs--info a-right">
+                    <div class="a-relative">
+                        <h4>Мэдээ</h4>
+                        <h2>Дартс гэж юу вэ?</h2>
+                        <p>sit impedit aliquid animi. Ea ipsa deleniti ut nulla commodi veritatis.</p>
+                        <div class="c-content__blogs--info--admin u-flex_wrap">
+                            <div class="c-content__blogs--info--admin_info">
+                                <img src="/img/New folder/scream1.png" alt="">
+                                <div>
+                                    <span>Админ</span></br>
+                                    <p>2020.02.02</p>
+                                </div>
+                            </div>
+                            <div class="u-flex_between">
+                                <a class="u-hover_icon">
+                                    <img src="/img/fb-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
+                                </a>
+                                <a class="u-hover_icon">
+                                    <img src="/img/twitter-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
+                                </a>
+                                <a class="u-hover_icon">
+                                    <img src="/img/instagram-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
+                                </a>
+                                <a class="u-hover_icon">
+                                    <img src="/img/youtube-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-content__blogs">
+                <img class="a-imgshadow a-right" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
+                <div class="c-content__blogs--img a-right">
+                    <img class="scale-image a-right" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
+                </div>
+                <div class="c-content__blogs--info a-left">
+                    <div class="a-relative">
+                        <h4>Мэдээ</h4>
+                        <h2>Дартс гэж юу вэ?</h2>
+                        <p>sit impedit aliquid animi. Ea ipsa deleniti ut nulla commodi veritatis.</p>
+                        <div class="c-content__blogs--info--admin u-flex_wrap">
+                            <div class="c-content__blogs--info--admin_info">
+                                <img src="/img/New folder/scream1.png" alt="">
+                                <div>
+                                    <span>Админ</span></br>
+                                    <p>2020.02.02</p>
+                                </div>
+                            </div>
+                            <div class="u-flex_between">
+                                <a class="u-hover_icon">
+                                    <img src="/img/fb-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
+                                </a>
+                                <a class="u-hover_icon">
+                                    <img src="/img/twitter-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
+                                </a>
+                                <a class="u-hover_icon">
+                                    <img src="/img/instagram-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
+                                </a>
+                                <a class="u-hover_icon">
+                                    <img src="/img/youtube-red.png" alt="">
+                                    <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-content__blogs2">
+                <div class="c-content__blogs2--single">
+                    <img class="c-content__blogs2--single--img" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
+                    <div class="c-content__blogs2--single--info">
+                        <div class="u-flex_between">
+                            <h4>Мэдээ</h4>
+                            <span>2020.20.20</span>
+                        </div>
+                        <h3>Дартс гэж юу вэ?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="c-content__blogs2--single--info--social u-flex_between">
+                            <a class="u-hover_icon">
+                                <img src="/img/fb-red.png" alt="">
+                                <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
+                            </a>
+                            <a class="u-hover_icon">
+                                <img src="/img/twitter-red.png" alt="">
+                                <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
+                            </a>
+                            <a class="u-hover_icon">
+                                <img src="/img/instagram-red.png" alt="">
+                                <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
+                            </a>
+                            <a class="u-hover_icon">
+                                <img src="/img/youtube-red.png" alt="">
+                                <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="c-content__blogs2--single--author" src="/img/New folder/scream1.png" alt="">
+                    <p class="c-content__blogs2--single--name">Овог Админ</p>
+                </div>
+            </div>
+            <div class="c-content__blogs2">
+                <div class="c-content__blogs2--single">
+                    <img class="c-content__blogs2--single--img" src="/img/darts-wallpaper-hd-57876-59641-hd-wallpapers.jpg.jpg" alt="">
+                    <div class="c-content__blogs2--single--info">
+                        <div class="u-flex_between">
+                            <h4>Мэдээ</h4>
+                            <span>2020.20.20</span>
+                        </div>
+                        <h3>Дартс гэж юу вэ?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="c-content__blogs2--single--info--social u-flex_between">
+                            <a class="u-hover_icon">
+                                <img src="/img/fb-red.png" alt="">
+                                <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
+                            </a>
+                            <a class="u-hover_icon">
+                                <img src="/img/twitter-red.png" alt="">
+                                <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
+                            </a>
+                            <a class="u-hover_icon">
+                                <img src="/img/instagram-red.png" alt="">
+                                <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
+                            </a>
+                            <a class="u-hover_icon">
+                                <img src="/img/youtube-red.png" alt="">
+                                <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <img class="c-content__blogs2--single--author" src="/img/New folder/scream1.png" alt="">
+                    <p class="c-content__blogs2--single--name">Овог Админ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="c-content">
+        <div class="c-content__quote">
+            <p>Lorem ipsum dolor sit amet consectetur, adt nobis. sectetur, adt   ipsum dolor sit amet consectetur, adsectetur, adt</p>
+            <div class="u-flex_center">
+                <img src="/img/New folder/scream1.png" alt="">
+                <div class="c-content__quote--info">
+                    <h5>Чиний дуртай авга ах</h5>
+                    <span>Ийм тийм газрын ийм псда</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brands -->
+    <div class="c-content">
+        <div class="c-content__brand">
+            <div class="c-content__brand--image">
+                <img src="/img/brand3.png" alt="">
+                <img class="alt-image" src="/img/brand2.png" alt="">
+            </div>
+            <div class="c-content__brand--image">
+                <img src="/img/brand1.png" alt="">
+                <img class="alt-image" src="/img/brand1.png" alt="">
+            </div>
+            <div class="c-content__brand--image">
+                <img src="/img/brand2.png" alt="">
+                <img class="alt-image" src="/img/brand2.png" alt="">
+            </div>
+            <div class="c-content__brand--image">
+                <img src="/img/brand3.png" alt="">
+                <img class="alt-image" src="/img/brand3.png" alt="">
+            </div>
+            <div class="c-content__brand--image">
+                <img src="/img/brand2.png" alt="">
+                <img class="alt-image" src="/img/brand2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+        <!-- Wrapper -->
+    <div class="c-rapper2">
+        <div class="c-rapper2__info">
+            <h2>Зуны шинэ коллекц</h2>
+            <h3>Үүнээс илүү бэлэг үгүй</h3>
+            <button class="u-button">Дэлгэрэнгүй</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="c-footer u-container">
+            <div class="c-footer__content u-flex_wrap">
+                <div class="c-footer__content--quarter">
+                    <h3>Холбоосууд</h3>
+                    <ul>
+                        <li>Нүүр</li>
+                        <li>Бүтээгдэхүүн</li>
+                        <li>Блог</li>
+                        <li>Тоглогчид</li>
+                        <li>Бидний тухай</li>
+                        <li>Миний аккаунт</li>
+                    </ul>
+                </div>
+                <div class="c-footer__content--quarter">
+                    <h3>Ангилал</h3>
+                    <ul>
+                        <li>Дартс</li>
+                        <li>Дартс самбар</li>
+                        <li>Хувцас</li>
+                        <li>Гоёл чимэглэл</li>
+                        <li>Хэрэгсэл</li>
+                    </ul>
+                </div>
+                <div class="c-footer__content--quarter">
+                    <h3>Холбоо барих</h3>
+                    <ul>
+                        <li>
+                            <img class="img-home" src="/img/New folder/home.png" alt="" width="30" height="30">
+                            <span>Манай хаяг</span>
+                        </li>
+                        <li>
+                            <img src="/img/New folder/phone.png" alt="" width="40" height="40">
+                            <span>95959595</span>
+                        </li>
+                        <li>
+                            <img class="img-email" src="/img/email.png" alt="" width="20" height="20">
+                            <span>darts.mn@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-footer__content--quarter">
+                    <h3>Холбоотой байх</h3>
+                    <form action="">
+                        <input type="text" placeholder="Email оруулна уу">
+                        <a><img src="/img/do-arrow2.png" alt=""></a>
+                    </form>
+                    <h3>Биднийг дагах</h3>
+                    <div class="u-flex_between">
+                        <a class="u-hover_icon">
+                            <img src="/img/fb-red.png" alt="">
+                            <img class="u-hover_icon--alt" src="/img/fb-alt.png" alt="">
+                        </a>
+                        <a class="u-hover_icon">
+                            <img src="/img/twitter-red.png" alt="">
+                            <img class="u-hover_icon--alt" src="/img/logo2-1.png" alt="">
+                        </a>
+                        <a class="u-hover_icon">
+                            <img src="/img/instagram-red.png" alt="">
+                            <img class="u-hover_icon--alt" src="/img/logo3-1.png" alt="">
+                        </a>
+                        <a class="u-hover_icon">
+                            <img src="/img/youtube-red.png" alt="">
+                            <img class="u-hover_icon--alt" src="/img/logo4-1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="c-footer__copyright">
+                <a href="">Үйлчилгээний нөхцөл</a>
+                ©2020 Darts.mn
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Script -->
+    <script src="/script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+</body>
+</html>
