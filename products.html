@@ -195,7 +195,7 @@
                     <a>Хуучин</a>
                 </div>
                 <div class="c-products__filter--index">
-                    Нийт <span>60</span> илэрцээс <span>16</span> нь харуулж байна.
+                    Нийт <span id="allitems"></span> илэрцээс <span id="currentitems"></span> нь харуулж байна.
                 </div>
             </div>
             <div class="c-products__items u-flex_wrap">
@@ -679,20 +679,650 @@
                         </div>
                     </div>
                 </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-products__items--item">
+                    <div class="u-card">
+                        <div class="u-card__content">
+                            <div class="u-card__content--img">
+                                <img class="u-card__content--img_pri" src="/img/New folder/baraa-2.png" alt="">
+                                <img class="u-card__content--img_sec" src="/img/New folder/baraa-3.png" alt="">
+                            </div>
+                            <div class="u-card__content--img--hover">
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/search1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/New folder/search5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/heart1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/heart5.png" alt="">
+                                </div>
+                                <div class="u-card__content--img--hover_box">
+                                    <img class="u-card__content--img--hover_box-pri" src="/img/New folder/compare1.png" alt="">
+                                    <img class="u-card__content--img--hover_box-sec" src="/img/compare3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="u-card__content--info">
+                                <div class="u-card__content--info_rating">
+                                    <i class="fa fa-star rating1" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating2" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating3" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating4" aria-hidden="true"></i>
+                                    <i class="fa fa-star rating5" aria-hidden="true"></i>
+                                </div>
+                                <h4>Барааны нэр</h4>
+                                <span id="p-type">Төрөл</span></br>
+                                <div class="">
+                                    <span id="p-price">150,000$</span>
+                                    <span id="p-price_old">230,000$</span>
+                                </div>
+                            </div>
+                            <button class="u-card__content--button">Сагсанд хийх <span>+</span></button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="c-content">
                 <div class="c-content__nav full">
-                    <div class="c-content__nav--navigation">
-                        <span class="material-icons">
-                            chevron_left
-                        </span>
-                        <a href="">1</a>
-                        <a href="">2</a>
-                        <a href="">3</a>
-                        <a href="">4</a>
-                        <span class="material-icons">
-                            chevron_right
-                        </span>
+                    <div id="navigation" class="c-content__nav--navigation">
                     </div>
                 </div>
             </div>
@@ -778,6 +1408,7 @@
     
     <!-- Script -->
     <script src="/script.js"></script>
+    <script src="/item-counter.js"></script>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
